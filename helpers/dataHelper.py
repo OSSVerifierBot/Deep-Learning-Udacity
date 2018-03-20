@@ -115,7 +115,7 @@ def maybe_pickle(data_folders, min_num_images_per_class, force=False):
                 with open(set_filename, 'wb') as f:
                     pickle.dump(dataset, f, pickle.HIGHEST_PROTOCOL)
             except Exception as e:
-                print('Unable to save data to', set_filename, ':', e)
+                print('Unable to loadedData data to', set_filename, ':', e)
 
     return dataset_names
 
